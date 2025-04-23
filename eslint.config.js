@@ -26,6 +26,8 @@ export default tseslint.config(
       ],
       // 分号检测
       'semi': ['error', 'always'],
+      // 单引号检测
+      'quotes': ['error', 'single'],
       // 未使用变量不报错
       'no-unused-vars': 'off',
       // import React from 'react' 不检测未使用
