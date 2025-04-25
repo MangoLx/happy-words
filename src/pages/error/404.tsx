@@ -1,22 +1,25 @@
-import { Result, Button } from '@arco-design/web-react';
+import { Button } from '@arco-design/mobile-react';
 import { useNavigate } from 'react-router-dom';
+import './404.less';
 
 const NotFound = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const backHome = () => {
-    history('/home');
+    navigate('/');
   };
+
   return (
-    <Result
-      status="404"
-      title="404"
-      subTitle="抱歉，这个页面不存在"
-      extra={
-        <Button type="primary" onClick={backHome}>
-          返回首页
-        </Button>
-      }
-    />
+    <div className="not-found-container">
+      <div className="not-found-content">
+        <div className="error-code">404</div>
+        <div className="error-desc">抱歉，您访问的页面不存在</div>
+        <div className="button-container">
+          <Button type="primary" shape="round" onClick={backHome}>
+            返回首页
+          </Button>
+        </div>
+      </div>
+    </div>
   );
 };
 
