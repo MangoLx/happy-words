@@ -1,12 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import setRootPixel from '@arco-design/mobile-react/tools/flexible';
 import App from './App.tsx';
 
-setRootPixel(37.5);
+const rootElement = document.getElementById('root')!;
+const root = createRoot(rootElement);
 
-createRoot(document.getElementById('root')!).render(
+root.render(
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 );

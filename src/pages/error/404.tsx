@@ -1,4 +1,4 @@
-import { Button } from '@arco-design/mobile-react';
+import { Button } from 'antd-mobile';
 import { useNavigate } from 'react-router-dom';
 import './404.less';
 
@@ -14,7 +14,7 @@ const NotFound = () => {
         <div className="error-code">404</div>
         <div className="error-desc">抱歉，您访问的页面不存在</div>
         <div className="button-container">
-          <Button type="primary" shape="round" onClick={backHome}>
+          <Button color="primary" onClick={backHome}>
             返回首页
           </Button>
         </div>

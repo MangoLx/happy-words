@@ -5,7 +5,7 @@ import { routes } from './routes';
 import Layout from '@/components/Layout';
 import NotFound from '@/pages/error/404';
 
-import '@arco-design/mobile-react/dist/style.css';
+import 'antd-mobile/es/global';
 import './App.less';
 
 const App = () => {

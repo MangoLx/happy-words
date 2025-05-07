@@ -2,7 +2,6 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   name: '张三',
-  age: 18,
 };
 
 const userSlice = createSlice({
